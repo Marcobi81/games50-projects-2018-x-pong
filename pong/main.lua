@@ -258,7 +258,7 @@ function love.update(dt)
         player2.dy= - PADDLE_SPEED
     else
         player2.dy = 0
-
+    end
 
     -- update our ball based on its DX and DY only if we're in play state;
     -- scale the velocity by dt so movement is framerate-independent
