@@ -252,9 +252,9 @@ function love.update(dt)
     -- end
 
     --player 2 autopilot
-    if player2.y+player2.height/2 < ball.y then
+    if math.floor(player2.y+player2.height/2) < math.floor(ball.y) then
         player2.dy= PADDLE_SPEED
-    elseif player2.y+player2.height/2 > ball.y then
+    elseif math.floor(player2.y+player2.height/2) > math.floor(ball.y) then
         player2.dy= - PADDLE_SPEED
     else
         player2.dy = 0
